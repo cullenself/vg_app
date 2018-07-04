@@ -1,4 +1,4 @@
 TODO:
-- [ ] Sliders for input
+- [x] Sliders for input
 - [ ] SVG Output
 - [ ] Stylize

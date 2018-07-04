@@ -12,6 +12,12 @@ Submit a Picture:<br>
             <input type="radio" name="method" value="{{method}}"> {{method}}<br>
         {% endfor %}
     </p>
+    <p>
+        {% for input, params in inputs.items() %}
+            <p>{{input}}</p>
+            <input type="range" min="{{params.min}}" max="{{params.max}}" value="{{params.val}}" id="{{input}}" name="{{input}}">
+        {% endfor %}
+    </p>
     <input type="file" id="picture" name="picture" accept="image/png, image/jpeg" /><br>
 </form>
 
